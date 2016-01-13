@@ -19,6 +19,7 @@ sudo apt-get install -y \
     libjpeg-dev \
     libpng-dev \
     libpspell-dev \
+    libsystemd-daemon-dev \
     libreadline-dev
 
 sudo mkdir /usr/local/php7
@@ -64,6 +65,7 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-readline \
                   --with-curl \
                   --enable-fpm \
+                  --with-fpm-systemd \
                   --with-fpm-user=www-data \
                   --with-fpm-group=www-data"
 
